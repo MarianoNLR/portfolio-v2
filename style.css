@@ -23,7 +23,7 @@ body {
 .encabezado {
     background-color: transparent;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     left: 0;
     top: 0;
     backdrop-filter: blur(3px);
@@ -124,7 +124,7 @@ body {
 }
 
 .presentacion__titulo {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .presentacion__parrafo {
@@ -136,7 +136,7 @@ body {
     flex-direction: row;
     gap: 10px;
     flex-wrap: wrap;
-    
+    padding: 1.2rem;
 }
 
 .presentacion__contenedor_botones_texto {
@@ -272,7 +272,6 @@ body {
     flex-direction: column;
     min-height: 400px;
     max-width: 800px;
-    max-height: 400px;
     align-items: flex-start;
     overflow-y: auto;
     overflow-x: hidden;
@@ -297,6 +296,7 @@ body {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to right bottom, #bebebe, #cecece, #dedede, #eeeeee, #ffffff);
+    color: #343434;
 }
 
 .contenedor__tarjetas__grid {
@@ -314,6 +314,7 @@ body {
     border-radius: 50px 10px 50px 0px;
 -moz-border-radius: 50px 10px 50px 0px;
 -webkit-border-radius: 50px 10px 50px 0px;
+color: white;
 }
 
 .tarjeta__contenido {
@@ -438,9 +439,17 @@ body {
         flex-direction: column;
     }
 
+    .presentacion__contenedor {
+        padding-top: 30%;
+    }
+
     .encabezado .enlaces {
         flex-direction: column;
         gap: 5px;
+    }
+
+    .articulo {
+        padding: 2rem;
     }
 
     .articulo__contenedor_descripciones {
@@ -456,8 +465,15 @@ body {
     }
 
     .seccion_descripcion__porta_retrato {
-        height: 100%;
-        width: 100%;
+        height: 60%;
+        width: 60%;
+    }
+
+    .seccion_descripcion__info {
+        max-height: max-content;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
     }
 }
 
@@ -473,11 +489,12 @@ body {
         justify-content: center;
     }
 
-    .seccion_descripcion__info {
-        max-height: max-content;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        max-width: 100%;
+    .presentacion__contenedor_info {
+        width: 100%;
+    }
+
+    .presentacion__contenedor {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
