@@ -13,6 +13,7 @@
 body {
     position: relative;
     min-height: 100%;
+    min-width: 600px;
     scrollbar-width: auto;
     scrollbar-color: gray transparent;
     /* background-image: linear-gradient(to right bottom, #001432, #001d3d, #012749, #013154, #003b60); */
@@ -22,7 +23,7 @@ body {
 .encabezado {
     background-color: transparent;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     left: 0;
     top: 0;
     backdrop-filter: blur(3px);
@@ -67,7 +68,6 @@ body {
 
 .principal {
     width: 100%;
-    min-width: 100vh;
 }
 
 .presentacion__contenedor {
@@ -156,7 +156,6 @@ body {
     flex-direction: column;
     padding: 0px;
     gap: 4rem;
-    overflow: hidden;
 }
 
 
@@ -212,7 +211,6 @@ body {
   .seccion_descripcion__info {
     display: flex;
     justify-content: center;
-    height: 300px;
   }
 
 .seccion_descripcion__porta_retrato {
@@ -223,8 +221,8 @@ body {
 }
 
 .seccion_descripcion__imagen {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     padding: 10px;
     background-color: var(--texto-primario);
     /* position: absolute;
@@ -236,20 +234,8 @@ body {
     border-radius: 50%;
 }
 
-/* .seccion_descripcion__imagen:hover,
-.seccion_descripcion__imagen:focus {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    background-color:var(--texto-primario);
-    left: 0;
-    top: 0;
-    transform: translateX(0);
-} */
-
 .seccion_descripcion__imagen_variante {
-    top: auto;
-    bottom: 20px;
+    
 }
 
 /* .seccion_descripcion__imagen_variante:hover,
@@ -278,10 +264,6 @@ body {
     font-size: 1.5rem;
     text-wrap: pretty;
     
-}
-
-.hobbies {
-    background-color: blue;
 }
 
 /*Proyectos*/
@@ -354,7 +336,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     border-top: 1px solid white;
-    min-width: 100vh;
+    min-width: 100%;
     background-image: linear-gradient(to right bottom, #393939, #313131, #2a2a2a, #232323, #1c1c1c);
     color: white;
 }
@@ -411,9 +393,19 @@ body {
 
 /*Media queries*/
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+    .seccion_descripcion {
+        flex-direction: column;
+    }
+
     .contenedor__tarjetas__grid {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 960px) {
+    .contenedor__tarjetas__grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -427,21 +419,21 @@ body {
         gap: 5px;
     }
 
-    .contenedor__tarjetas__grid {
-        grid-template-columns: 1fr;
-    }
-
     .articulo__contenedor_descripciones {
         flex-direction: column;
-        padding: 2rem;
     }
 
     .mi-historia {
-        border-radius: 20px;
+        width: 100%;
     }
 
     .hobbies {
-        border-radius: 20px;
+        width: 100%;
+    }
+
+    .seccion_descripcion__porta_retrato {
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -455,5 +447,13 @@ body {
 
     .enlaces_redes {
         justify-content: center;
+    }
+
+    .seccion_descripcion__info {
+        max-height: max-content;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
     }
 }
