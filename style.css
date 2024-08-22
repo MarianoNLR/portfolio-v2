@@ -42,6 +42,7 @@ body {
 .navegacion__titulo  {
     margin-left: 10px;
     font-size: 3.5rem;
+    transition: color .3s linear;
 }
 
 .navegacion__enlace {
@@ -381,8 +382,16 @@ color: white;
     width: 30px;
 }
 
-.enlaces__enlace:hover {
+.enlaces__enlace {
+    transition: color .3s linear;
+}
 
+.enlaces__enlace:hover {
+    color: rgb(117, 117, 117);
+}
+
+.navegacion__titulo:hover {
+    color: rgb(117, 117, 117);
 }
 
 .enlaces__icono {
