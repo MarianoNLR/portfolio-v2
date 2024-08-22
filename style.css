@@ -167,7 +167,7 @@ body {
 .articulo {
     width: 100%;
     min-height: 100vh;
-    padding: 2rem 10rem;
+    padding: 5rem 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -458,7 +458,7 @@ color: white;
     }
 
     .articulo {
-        padding: 2rem;
+        padding: 15rem 2rem;
     }
 
     .articulo__contenedor_descripciones {
