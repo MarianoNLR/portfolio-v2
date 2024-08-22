@@ -66,6 +66,30 @@ body {
     font-weight: 600;
 }
 
+.sobre-mi_menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.sobre-mi_menu {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: #1c1c1c;
+}
+
+.enlaces li:hover .sobre-mi_menu {
+    display: block;
+}
+
+.sobre-mi_menu li:hover {
+    background-color: #383838;
+}
+
+
 .principal {
     width: 100%;
 }
