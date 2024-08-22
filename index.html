@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Web</title>
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a class="navegacion__enlace" href="#presentacion"><h2 class="navegacion__titulo">MNLR</h2></a>
+            <ul class="enlaces">
+                <li class="enlaces__item"><a href="#" class="enlaces__enlace">Presentacion</a></li>
+                <li class="enlaces__item"><a href="#sobre-mi" class="enlaces__enlace">Sobre Mi</a></li>
+                <li class="enlaces__item"><a href="#proyectos" class="enlaces__enlace">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+        <section class="presentacion" id="presentacion">
+            <div class="presentacion__contenedor">
+              <div class="presentacion__contenedor_info">
+                <h1 class="presentacion__titulo">Soy Desarrollador</h1>
+                <p class="presentacion__parrafo">Hola!  Mi nombre es Mariano Nehuén Lotero Rolón.
+                Bienvenido a mi Portfolio, donde podrás conocer un poco más sobre mi y los proyectos que he realizado.</p>
+              </div>
+              <div class="presentacion__contenedor_botones">
+                    <a href="#sobre-mi" class="boton" role="button"><span class="presentacion__contenedor_botones_texto">Sobre mi</span></a>
+                    <a 
+                    href="./assets/docs/cv.pdf"
+                    target="_blank"
+                    class="boton"
+                    role="button"
+                    ><span class="presentacion__contenedor_botones_texto">Descargar CV</span></a>
+              </div>
+            </div>
+        </section>
+        <article class="articulo sobre-mi" id="sobre-mi">
+        <div class="articulo__contenedor_descripciones">
+          <section class="seccion_descripcion mi-historia">
+            <div class="seccion_descripcion__porta_retrato">
+              <img
+                class="seccion_descripcion__imagen"
+                src="./assets/images/autoretrato.jpg"
+                alt="Foto del Programador"
+                title="Foto del programador"
+              />
+            </div>
+            <div
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion personal"
+            >
+              <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                Mi historia
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+              Soy estudiante de la Tecnicatura Universitaria en Programación
+              en la Universidad Tecnológica Nacional. Donde aprendí los
+              principios de la programación y a trabajar en equipo para resolver
+              los problemas que se presentan a la hora de desarrollar software. 
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+              A su vez realicé cursos donde adquirí conocimientos en diferentes
+              lenguajes de programación como Python, Java, SQL y frameworks
+              tales como Django, React, Spring, Express. 
+              </p>
+            </div>
+          </section>
+          <section class="seccion_descripcion hobbies">
+            <div
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion personal"
+            >
+              <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                Mis hobbies
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+                Disfruto de escuchar música en una amplia variedad de generos y artistas. No solo permite relajar la mente sino que tambien ayuda a la inspiracion. 
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+                También me resulta el aprendizaje de idioma, aunque no sea tan constante siempre es bueno aprender algo nuevo que permite conocer más sobre otras lenguas y culturas, ademas de facilitar la comunicación con otra gente.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+                A veces me gusta mirar videos sobre desarrollo, ya sea para estar al tanto con las noticias del mundo IT o aprender nuevas cosas que podria implementar en futuros proyectos que me interese desarrollar.
+              </p>
+            </div>
+            <div class="seccion_descripcion__porta_retrato">
+              <img
+                class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
+                src="./assets/images/hobbies.jpg"
+                alt="Foto con tematica de programacion"
+                title="Programacion"
+              />
+            </div>
+          </section>
+        </div>
+        </article>
+        <article class="articulo proyectos" id="proyectos">
+          <h2 class="articulo__titulo">Mis proyectos</h2>
+          <div class="contenedor__tarjetas__grid">
+            <div class="tarjeta" aria-label="presentacion proyecto personal">
+              <img src="./assets/images/proyectos/Pomodoro.png" alt="Imagen del proyecto" class="tarjeta__imagen" title="Proyecto 1">
+              <div class="tarjeta__contenido">
+                <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Reloj Pomodoro</h3>
+                <p class="tarjeta__parrafo" aria-label="descripcion de proyecto personal">Proyecto realizado con React. Consiste en un reloj que permite gestionar sesiones definiendo un tiempo para realizar algun tipo de trabajo y un tiempo para descanso.</p>
+                <a href="https://codepen.io/Mariano-Lotero-Rol-n/full/bGzxEOq" class="boton" target="_blank">Ver Proyecto</a>
+              </div>
+            </div>
+            <div class="tarjeta" aria-label="presentacion proyecto personal">
+              <img src="./assets/images/proyectos/Quote-generator.png" alt="Imagen del proyecto" class="tarjeta__imagen" title="Proyecto 2">
+              <div class="tarjeta__contenido">
+                <h3 class="tarjeta__titulo" id="titulo_proyecto_2">Generador de Frases</h3>
+                <p class="tarjeta__parrafo" aria-label="descripcion de proyecto personal">Este proyecto es una pagina web que selecciona una frase al azar y la muestra en una tarjeta. Está realizado principalmente con React</p>
+                <a href="https://codepen.io/Mariano-Lotero-Rol-n/full/eYxrwBW" class="boton" target="_blank">Ver Proyecto</a>
+              </div>
+            </div>
+            <div class="tarjeta" aria-label="presentacion proyecto personal">
+              <img src="./assets/images/proyectos/Calculadora.png" alt="Imagen del proyecto" class="tarjeta__imagen" title="Proyecto 3">
+              <div class="tarjeta__contenido">
+                <h3 class="tarjeta__titulo" id="titulo_proyecto_3">Calculadora</h3>
+                <p class="tarjeta__parrafo" aria-label="descripcion de proyecto personal">Calculadora básica que permite realizar operaciones simples como suma, resta, division y multiplicación. Hecho con React.</p>
+                <a href="https://codepen.io/Mariano-Lotero-Rol-n/full/ZEwVjqZ" class="boton" target="_blank">Ver Proyecto</a>
+              </div>
+            </div>
+            <div class="tarjeta" aria-label="presentacion proyecto personal">
+              <img src="./assets/images/proyectos/Notes-api.png" alt="Imagen del proyecto" class="tarjeta__imagen" title="Proyecto 4">
+              <div class="tarjeta__contenido">
+                <h3 class="tarjeta__titulo" id="titulo_proyecto_4">Notas</h3>
+                <p class="tarjeta__parrafo" aria-label="descripcion de proyecto personal">Pagina web que permite crear notas y marcarlas como cuando ya han sido realizadas. Cada usuario tiene sus propias notas y puede modificarlas como le parezca. Proyecto realizado principalmente con Python y Django</p>
+                <a href="https://github.com/MarianoNLR/django-taskslist" class="boton" target="_blank">Ver Proyecto</a>
+              </div>
+            </div>
+            <div class="tarjeta" aria-label="presentacion proyecto personal">
+              <img src="./assets/images/proyectos/Tattoo-api.png" alt="Imagen del proyecto" class="tarjeta__imagen" title="Proyecto 5">
+              <div class="tarjeta__contenido">
+                <h3 class="tarjeta__titulo" id="titulo_proyecto_5">Tatuajes API</h3>
+                <p class="tarjeta__parrafo" aria-label="descripcion de proyecto personal">Api que permite realizar un CRUD para publicar tatuajes, ademas cuenta con un Frontend sencillo para visualizar las imagenes de los tatuajes subidos. Realizado con Nodejs y React.</p>
+                <a href="https://github.com/MarianoNLR/tattoo-api" class="boton" target="_blank">Ver Proyecto</a>
+              </div>
+            </div>
+            <div class="tarjeta" aria-label="presentacion proyecto personal">
+              <img src="./assets/images/proyectos/Blog-api.png" alt="Imagen del proyecto" class="tarjeta__imagen" title="Proyecto 6">
+              <div class="tarjeta__contenido">
+                <h3 class="tarjeta__titulo" id="titulo_proyecto_6">Blog API</h3>
+                <p class="tarjeta__parrafo" aria-label="descripcion de proyecto personal">Api que cuenta con gestion de usuarios y les permite publicar, eliminar, visualizar y dar me gusta a los diferentes posts creados por los usuarios.</p>
+                <a href="https://github.com/MarianoNLR/blog-api" class="boton" target="_blank">Ver Proyecto</a>
+              </div>
+            </div>
+          </div>
+        </article>
+    </main>
+    <footer class="pie_de_pagina" role="contentinfo">
+        <div class="pie_de_pagina__columna">
+            <h4 class="pie_de_pagina__titulo_columna">Mis redes Sociales</h4>
+            <ul class="enlaces enlaces_redes">
+                <li class="enlaces__item">
+                    <a 
+                    href="https://www.instagram.com/marianolotero/"
+                    class="enlaces__enlace enlaces__enlace_footer"
+                    target="_blank"><img
+                    class="enlaces__icono"
+                    src="./assets/images/logos/ig-logo.png"
+                    alt="logo de instagram"
+                    title="instagram"
+                  /></a>
+                </li> 
+                <li class="enlaces__item">
+                  <a 
+                  href="https://github.com/MarianoNLR"
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  target="_blank"><img
+                  class="enlaces__icono"
+                  src="./assets/images/logos/github-logo.png"
+                  alt="logo de github"
+                  title="github"
+              /></a>
+              </li>
+              <li class="enlaces__item">
+                <a 
+                href="https://www.linkedin.com/in/mariano-lotero-rol%C3%B3n-26011124a/"
+                class="enlaces__enlace enlaces__enlace_footer"
+                target="_blank"><img
+                class="enlaces__icono"
+                src="./assets/images/logos/linkedin-logo.png"
+                alt="logo de linkedin"
+                title="linkedin"
+              /></a>
+            </li>
+            </ul>
+        </div>
+        <div class="pie_de_pagina__columna" role="navigation">
+            <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+            <ul class="enlaces enlaces_vertical">
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="#presentacion"
+                  >Inicio</a
+                >
+              </li>
+              <li class="enlaces__item">
+                <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+                  >Sobre mi</a
+                >
+              </li>
+              <li class="enlaces__item">
+                <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+                  >Proyectos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="pie_de_pagina__columna">
+            <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+            <ul class="enlaces enlaces_vertical">
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="mailto:mail@mail.com"
+                  target="_blank"
+                  >marianonehuenlr@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <span class="divisor"></span>
+          <div class="pie_de_pagina__copyright">
+            <p>©️Copyright 2024</p>
+          </div>
+    </footer>
+</body>
+</html>
